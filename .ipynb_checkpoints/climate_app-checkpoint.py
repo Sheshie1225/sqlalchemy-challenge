@@ -1,4 +1,4 @@
-#Climate App
+#climate app
 
 import numpy as np
 import datetime as dt
@@ -13,12 +13,12 @@ from flask import Flask, jsonify
 #create database
 engine = create_engine("sqlite:///Resources/hawaii.sqlite")
 
-#reflect an existing database into a new model
+# reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
 Base.prepare(engine, reflect=True)
 
-#save references to each table
+# Save references to each table
 Measurement = Base.classes.measurement
 Station = Base.classes.station
 
